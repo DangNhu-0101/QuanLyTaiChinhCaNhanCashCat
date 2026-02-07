@@ -7,9 +7,9 @@ namespace QuanLyTaiChinh
 {
     public class DatabaseHelper
     {
-        private string chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+        private string chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
 
-        // Lấy danh sách tên hạng mục theo tài khoản và loại (Thu/Chi)
+   
         public List<string> GetHangMucList(int maTaiKhoan, string loaiHangMuc)
         {
             var result = new List<string>();
@@ -36,7 +36,6 @@ namespace QuanLyTaiChinh
             return result;
         }
 
-        // Lấy MaHangMuc theo tên hạng mục và tài khoản
         public int? GetMaHangMuc(string tenHangMuc, int maTaiKhoan)
         {
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
@@ -53,7 +52,6 @@ namespace QuanLyTaiChinh
             }
         }
 
-        // Lấy TenHangMuc theo MaHangMuc và tài khoản
         public string GetTenHangMuc(int maHangMuc, int maTaiKhoan)
         {
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
@@ -70,7 +68,7 @@ namespace QuanLyTaiChinh
             }
         }
 
-        // Kiểm tra sự tồn tại của MaHangMuc
+
         public bool KiemTraMaHangMuc(int maHangMuc, int maTaiKhoan)
         {
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))

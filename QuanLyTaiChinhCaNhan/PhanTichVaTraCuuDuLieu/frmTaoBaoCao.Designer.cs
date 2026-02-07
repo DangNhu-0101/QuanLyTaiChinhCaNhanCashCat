@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTaoBaoCao));
             this.siticoneShadowPanel1 = new Siticone.UI.WinForms.SiticoneShadowPanel();
+            this.siticoneLabel3 = new Siticone.UI.WinForms.SiticoneLabel();
+            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.rdoImgYear = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.rdoImgMonth = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.rdoImgWeek = new Guna.UI2.WinForms.Guna2ImageRadioButton();
@@ -39,8 +41,6 @@
             this.siticoneLabel2 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneLabel1 = new Siticone.UI.WinForms.SiticoneLabel();
             this.cmbBaoCao = new Siticone.UI.WinForms.SiticoneComboBox();
-            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
-            this.siticoneLabel3 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,28 @@
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(549, 354);
             this.siticoneShadowPanel1.TabIndex = 0;
+            // 
+            // siticoneLabel3
+            // 
+            this.siticoneLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel3.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(114)))));
+            this.siticoneLabel3.Location = new System.Drawing.Point(213, 37);
+            this.siticoneLabel3.Name = "siticoneLabel3";
+            this.siticoneLabel3.Size = new System.Drawing.Size(311, 65);
+            this.siticoneLabel3.TabIndex = 26;
+            this.siticoneLabel3.Text = "Tạo báo cáo";
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox1.Image")));
+            this.siticonePictureBox1.Location = new System.Drawing.Point(129, 34);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
+            this.siticonePictureBox1.Size = new System.Drawing.Size(91, 45);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 25;
+            this.siticonePictureBox1.TabStop = false;
             // 
             // rdoImgYear
             // 
@@ -166,7 +188,7 @@
             this.siticoneLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel2.Location = new System.Drawing.Point(58, 190);
             this.siticoneLabel2.Name = "siticoneLabel2";
-            this.siticoneLabel2.Size = new System.Drawing.Size(54, 30);
+            this.siticoneLabel2.Size = new System.Drawing.Size(84, 47);
             this.siticoneLabel2.TabIndex = 2;
             this.siticoneLabel2.Text = "Theo:";
             // 
@@ -177,7 +199,7 @@
             this.siticoneLabel1.Location = new System.Drawing.Point(41, 107);
             this.siticoneLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.siticoneLabel1.Name = "siticoneLabel1";
-            this.siticoneLabel1.Size = new System.Drawing.Size(122, 30);
+            this.siticoneLabel1.Size = new System.Drawing.Size(195, 47);
             this.siticoneLabel1.TabIndex = 1;
             this.siticoneLabel1.Text = "Loại báo cáo:";
             // 
@@ -199,31 +221,9 @@
             this.cmbBaoCao.Size = new System.Drawing.Size(279, 36);
             this.cmbBaoCao.TabIndex = 0;
             // 
-            // siticonePictureBox1
-            // 
-            this.siticonePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox1.Image")));
-            this.siticonePictureBox1.Location = new System.Drawing.Point(129, 34);
-            this.siticonePictureBox1.Name = "siticonePictureBox1";
-            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
-            this.siticonePictureBox1.Size = new System.Drawing.Size(91, 45);
-            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.siticonePictureBox1.TabIndex = 25;
-            this.siticonePictureBox1.TabStop = false;
-            // 
-            // siticoneLabel3
-            // 
-            this.siticoneLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneLabel3.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(114)))));
-            this.siticoneLabel3.Location = new System.Drawing.Point(213, 37);
-            this.siticoneLabel3.Name = "siticoneLabel3";
-            this.siticoneLabel3.Size = new System.Drawing.Size(201, 42);
-            this.siticoneLabel3.TabIndex = 26;
-            this.siticoneLabel3.Text = "Tạo báo cáo";
-            // 
             // frmTaoBaoCao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(576, 378);
@@ -232,6 +232,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmTaoBaoCao";
             this.Text = "frmTaoBaoCao";
+            this.Load += new System.EventHandler(this.frmTaoBaoCao_Load);
             this.siticoneShadowPanel1.ResumeLayout(false);
             this.siticoneShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();

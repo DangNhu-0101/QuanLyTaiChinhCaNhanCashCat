@@ -56,9 +56,9 @@
             this.siticoneLabel7 = new Siticone.UI.WinForms.SiticoneLabel();
             this.btnQuayLai = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.siticoneShadowPanel1 = new Siticone.UI.WinForms.SiticoneShadowPanel();
-            this.txtKeyword = new Siticone.UI.WinForms.SiticoneTextBox();
-            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.siticoneLabel8 = new Siticone.UI.WinForms.SiticoneLabel();
+            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
+            this.txtKeyword = new Siticone.UI.WinForms.SiticoneTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTuSoTien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDenSoTien)).BeginInit();
@@ -329,7 +329,7 @@
             this.siticoneLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel1.Location = new System.Drawing.Point(37, 123);
             this.siticoneLabel1.Name = "siticoneLabel1";
-            this.siticoneLabel1.Size = new System.Drawing.Size(77, 30);
+            this.siticoneLabel1.Size = new System.Drawing.Size(122, 47);
             this.siticoneLabel1.TabIndex = 9;
             this.siticoneLabel1.Text = "Từ khóa";
             // 
@@ -339,7 +339,7 @@
             this.siticoneLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel2.Location = new System.Drawing.Point(342, 123);
             this.siticoneLabel2.Name = "siticoneLabel2";
-            this.siticoneLabel2.Size = new System.Drawing.Size(81, 30);
+            this.siticoneLabel2.Size = new System.Drawing.Size(129, 47);
             this.siticoneLabel2.TabIndex = 10;
             this.siticoneLabel2.Text = "Từ ngày:";
             // 
@@ -349,7 +349,7 @@
             this.siticoneLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel3.Location = new System.Drawing.Point(592, 123);
             this.siticoneLabel3.Name = "siticoneLabel3";
-            this.siticoneLabel3.Size = new System.Drawing.Size(95, 30);
+            this.siticoneLabel3.Size = new System.Drawing.Size(150, 47);
             this.siticoneLabel3.TabIndex = 11;
             this.siticoneLabel3.Text = "Đến ngày:";
             // 
@@ -359,7 +359,7 @@
             this.siticoneLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel4.Location = new System.Drawing.Point(820, 123);
             this.siticoneLabel4.Name = "siticoneLabel4";
-            this.siticoneLabel4.Size = new System.Drawing.Size(134, 30);
+            this.siticoneLabel4.Size = new System.Drawing.Size(213, 47);
             this.siticoneLabel4.TabIndex = 12;
             this.siticoneLabel4.Text = "Loại giao dịch:";
             // 
@@ -369,7 +369,7 @@
             this.siticoneLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel5.Location = new System.Drawing.Point(978, 123);
             this.siticoneLabel5.Name = "siticoneLabel5";
-            this.siticoneLabel5.Size = new System.Drawing.Size(102, 30);
+            this.siticoneLabel5.Size = new System.Drawing.Size(161, 47);
             this.siticoneLabel5.TabIndex = 13;
             this.siticoneLabel5.Text = "Hạng mục:";
             // 
@@ -379,7 +379,7 @@
             this.siticoneLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel6.Location = new System.Drawing.Point(46, 247);
             this.siticoneLabel6.Name = "siticoneLabel6";
-            this.siticoneLabel6.Size = new System.Drawing.Size(99, 30);
+            this.siticoneLabel6.Size = new System.Drawing.Size(156, 47);
             this.siticoneLabel6.TabIndex = 14;
             this.siticoneLabel6.Text = "Từ số tiền:";
             // 
@@ -389,7 +389,7 @@
             this.siticoneLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel7.Location = new System.Drawing.Point(218, 247);
             this.siticoneLabel7.Name = "siticoneLabel7";
-            this.siticoneLabel7.Size = new System.Drawing.Size(113, 30);
+            this.siticoneLabel7.Size = new System.Drawing.Size(177, 47);
             this.siticoneLabel7.TabIndex = 15;
             this.siticoneLabel7.Text = "Đến số tiền:";
             // 
@@ -442,6 +442,28 @@
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(1158, 352);
             this.siticoneShadowPanel1.TabIndex = 20;
             // 
+            // siticoneLabel8
+            // 
+            this.siticoneLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneLabel8.Font = new System.Drawing.Font("Cascadia Code", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(114)))));
+            this.siticoneLabel8.Location = new System.Drawing.Point(405, 38);
+            this.siticoneLabel8.Name = "siticoneLabel8";
+            this.siticoneLabel8.Size = new System.Drawing.Size(54, 8);
+            this.siticoneLabel8.TabIndex = 21;
+            this.siticoneLabel8.Text = "Tìm kiếm nâng cao";
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox1.Image")));
+            this.siticonePictureBox1.Location = new System.Drawing.Point(318, 38);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
+            this.siticonePictureBox1.Size = new System.Drawing.Size(61, 54);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 20;
+            this.siticonePictureBox1.TabStop = false;
+            // 
             // txtKeyword
             // 
             this.txtKeyword.BorderThickness = 2;
@@ -466,31 +488,9 @@
             this.txtKeyword.Size = new System.Drawing.Size(267, 44);
             this.txtKeyword.TabIndex = 17;
             // 
-            // siticonePictureBox1
-            // 
-            this.siticonePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("siticonePictureBox1.Image")));
-            this.siticonePictureBox1.Location = new System.Drawing.Point(318, 38);
-            this.siticonePictureBox1.Name = "siticonePictureBox1";
-            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
-            this.siticonePictureBox1.Size = new System.Drawing.Size(61, 54);
-            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.siticonePictureBox1.TabIndex = 20;
-            this.siticonePictureBox1.TabStop = false;
-            // 
-            // siticoneLabel8
-            // 
-            this.siticoneLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneLabel8.Font = new System.Drawing.Font("Cascadia Code", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(114)))));
-            this.siticoneLabel8.Location = new System.Drawing.Point(405, 38);
-            this.siticoneLabel8.Name = "siticoneLabel8";
-            this.siticoneLabel8.Size = new System.Drawing.Size(377, 51);
-            this.siticoneLabel8.TabIndex = 21;
-            this.siticoneLabel8.Text = "Tìm kiếm nâng cao";
-            // 
             // frmTimKiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1197, 788);
@@ -500,6 +500,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmTimKiem";
             this.Text = "frmTimKiem";
+  
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTuSoTien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDenSoTien)).EndInit();

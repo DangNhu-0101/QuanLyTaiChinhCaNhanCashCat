@@ -42,7 +42,7 @@ namespace QuanLyTaiChinh
             this.lblBieuTuong.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.lblBieuTuong.Location = new System.Drawing.Point(42, 132);
             this.lblBieuTuong.Name = "lblBieuTuong";
-            this.lblBieuTuong.Size = new System.Drawing.Size(112, 28);
+            this.lblBieuTuong.Size = new System.Drawing.Size(183, 45);
             this.lblBieuTuong.TabIndex = 2;
             this.lblBieuTuong.Text = "Biểu tượng:";
             // 
@@ -126,7 +126,7 @@ namespace QuanLyTaiChinh
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(102, 62);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(175, 30);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(285, 47);
             this.guna2HtmlLabel1.TabIndex = 13;
             this.guna2HtmlLabel1.Text = "Nhập tên hạng mục ";
             // 
@@ -185,6 +185,7 @@ namespace QuanLyTaiChinh
             this.Name = "frmThemHangMuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Thêm hạng mục";
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();

@@ -21,12 +21,12 @@ namespace QuanLyNganSach
 
         protected override void Paint(Graphics graphics, Rectangle clipBounds, Rectangle cellBounds, int rowIndex, DataGridViewElementStates cellState, object value, object formattedValue, string errorText, DataGridViewCellStyle cellStyle, DataGridViewAdvancedBorderStyle advancedBorderStyle, DataGridViewPaintParts paintParts)
         {
-            // Vẽ nền mặc định của ô
+
             base.Paint(graphics, clipBounds, cellBounds, rowIndex, cellState, value, formattedValue, errorText, cellStyle, advancedBorderStyle, paintParts & ~DataGridViewPaintParts.ContentForeground);
 
             try
             {
-                // Xử lý giá trị tiến độ
+
                 int progressVal = 0;
                 if (value != null && value != DBNull.Value)
                 {
@@ -44,19 +44,16 @@ namespace QuanLyNganSach
                 float percentage = progressVal / 100.0f;
                 int progressWidth = (int)(cellBounds.Width * percentage);
 
-                // Xóa nền ô trước khi vẽ
                 using (Brush backBrush = new SolidBrush(cellStyle.BackColor))
                 {
                     graphics.FillRectangle(backBrush, cellBounds);
                 }
 
-                // Vẽ thanh tiến độ
                 using (Brush progressBrush = new SolidBrush(Color.Green))
                 {
                     graphics.FillRectangle(progressBrush, cellBounds.X, cellBounds.Y, progressWidth, cellBounds.Height);
                 }
 
-                // Vẽ văn bản phần trăm
                 using (Brush textBrush = new SolidBrush(cellStyle.ForeColor))
                 {
                     string text = $"{progressVal}%";

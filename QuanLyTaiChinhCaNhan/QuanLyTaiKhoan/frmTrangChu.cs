@@ -14,7 +14,7 @@ namespace QuanLyTaiChinhCaNhan
     public partial class frmTrangChu : Form
     {
         private int _maTaiKhoan;
-        private string chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+        private string chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
 
         public frmTrangChu(int maTaiKhoan)
         {
@@ -305,7 +305,7 @@ namespace QuanLyTaiChinhCaNhan
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            frmTaoBaoCao form = new frmTaoBaoCao(_maTaiKhoan); // Truyền _maTaiKhoan
+            frmTaoBaoCao form = new frmTaoBaoCao(_maTaiKhoan); 
             form.ShowDialog();
         }
 
@@ -325,7 +325,7 @@ namespace QuanLyTaiChinhCaNhan
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            frmThongKe form = new frmThongKe(_maTaiKhoan); // Truyền _maTaiKhoan
+            frmThongKe form = new frmThongKe(_maTaiKhoan);
             form.ShowDialog();
         }
 

@@ -11,7 +11,7 @@ namespace QuanLyTaiChinhCaNhan
         private int currentStep = 1;
         private string otpCode;
         private string emailOrPhone;
-        private string chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+        private string chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
 
         public frmKhoiPhucMatKhau()
         {
@@ -126,19 +126,19 @@ namespace QuanLyTaiChinhCaNhan
         }
         private void rdoImgPassMoi_MouseEnter(object sender, EventArgs e)
         {
-            txtMatKhauMoi.UseSystemPasswordChar = false; // Hiển thị mật khẩu mới khi rê chuột vào
+            txtMatKhauMoi.UseSystemPasswordChar = false; 
         }
         private void rdoImgPassMoi_MouseLeave(object sender, EventArgs e)
         {
-            txtMatKhauMoi.UseSystemPasswordChar = true; // Ẩn mật khẩu mới khi rời chuột
+            txtMatKhauMoi.UseSystemPasswordChar = true; 
         }
         private void rdoImgNhapLaiPassMoi_MouseEnter(object sender, EventArgs e)
         {
-            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = false; // Hiển thị xác nhận mật khẩu mới khi rê chuột vào
+            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = false;
         }
         private void rdoImgNhapLaiPassMoi_MouseLeave(object sender, EventArgs e)
         {
-            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = true; // Ẩn xác nhận mật khẩu mới khi rời chuột
+            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = true; 
         }
         private bool IsValidEmailOrPhone(string input)
         {

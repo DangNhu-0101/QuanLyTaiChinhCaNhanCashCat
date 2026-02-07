@@ -340,12 +340,11 @@ namespace QuanLyGiaoDich
 
                         int maGiaoDich = Convert.ToInt32(row["Mã Giao Dịch"]);
 
-                        //  LẤY FirebaseId TỪ CỘT (nếu có)
+             
                         string firebaseId = row.Table.Columns.Contains("FirebaseId") && row["FirebaseId"] != DBNull.Value
                             ? row["FirebaseId"].ToString()
                             : null;
 
-                        //  XÓA TRÊN FIREBASE nếu có FirebaseId
                         if (!string.IsNullOrEmpty(firebaseId))
                         {
                             try
@@ -407,12 +406,11 @@ namespace QuanLyGiaoDich
 
                         int maGiaoDich = Convert.ToInt32(row["Mã Giao Dịch"]);
 
-                        // THÊM: Lấy FirebaseId nếu có
+  
                         string firebaseId = row.Table.Columns.Contains("FirebaseId") && row["FirebaseId"] != DBNull.Value
                             ? row["FirebaseId"].ToString()
                             : null;
 
-                        // THÊM: Xóa trên Firebase nếu có FirebaseId
                         if (!string.IsNullOrEmpty(firebaseId))
                         {
                             try

@@ -174,6 +174,7 @@ namespace QuanLyTaiChinh
             this.Name = "frmQuanLyHangMuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý hạng mục";
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.siticoneShadowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

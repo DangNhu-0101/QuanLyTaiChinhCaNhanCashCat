@@ -9,7 +9,7 @@ namespace QuanLyTaiChinhCaNhan
         private int _maTaiKhoan;
         private string currentPassword;
         public string NewPassword { get; private set; }
-        private string chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+        private string chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
 
         public frmDoiMatKhau(int maTaiKhoan, string currentPassword)
         {
@@ -19,28 +19,28 @@ namespace QuanLyTaiChinhCaNhan
         }
         private void rdoImgPass_MouseEnter(object sender, EventArgs e)
         {
-            txtMatKhauCu.UseSystemPasswordChar = false; // Hiển thị mật khẩu khi rê chuột vào
+            txtMatKhauCu.UseSystemPasswordChar = false; 
         }
 
         private void rdoImgPass_MouseLeave(object sender, EventArgs e)
         {
-            txtMatKhauCu.UseSystemPasswordChar = true; // Ẩn mật khẩu khi rời chuột
+            txtMatKhauCu.UseSystemPasswordChar = true; 
         }
         private void rdoImgPassMoi_MouseEnter(object sender, EventArgs e)
         {
-            txtMatKhauMoi.UseSystemPasswordChar = false; // Hiển thị mật khẩu mới khi rê chuột vào
+            txtMatKhauMoi.UseSystemPasswordChar = false; 
         }
         private void rdoImgPassMoi_MouseLeave(object sender, EventArgs e)
         {
-            txtMatKhauMoi.UseSystemPasswordChar = true; // Ẩn mật khẩu mới khi rời chuột
+            txtMatKhauMoi.UseSystemPasswordChar = true; 
         }
         private void rdoImgNhapLaiPassMoi_MouseEnter(object sender, EventArgs e)
         {
-            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = false; // Hiển thị xác nhận mật khẩu mới khi rê chuột vào
+            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = false;
         }
         private void rdoImgNhapLaiPassMoi_MouseLeave(object sender, EventArgs e)
         {
-            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = true; // Ẩn xác nhận mật khẩu mới khi rời chuột
+            txtNhapLaiMatKhauMoi.UseSystemPasswordChar = true; 
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)

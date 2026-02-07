@@ -15,12 +15,12 @@ namespace QuanLyTaiChinhCaNhan
         }
         private void rdoImgPass_MouseEnter(object sender, EventArgs e)
         {
-            txtMatKhau.UseSystemPasswordChar = false; // Hiển thị mật khẩu khi rê chuột vào
+            txtMatKhau.UseSystemPasswordChar = false; 
         }
 
         private void rdoImgPass_MouseLeave(object sender, EventArgs e)
         {
-            txtMatKhau.UseSystemPasswordChar = true; // Ẩn mật khẩu khi rời chuột
+            txtMatKhau.UseSystemPasswordChar = true; 
         }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -80,9 +80,6 @@ namespace QuanLyTaiChinhCaNhan
             frmDangKy.ShowDialog();
         }
 
-        private void frmDangNhap_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -6,7 +6,7 @@ namespace QuanLyTaiChinhCaNhan
 {
     public partial class frmThongTinCaNhan : Form
     {
-        private string chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+        private string chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
         private int _maTaiKhoan;
         private string _hoTenOriginal;
         private string _tenDangNhapOriginal;
@@ -128,12 +128,12 @@ namespace QuanLyTaiChinhCaNhan
         }
         private void rdoImgPass_MouseEnter(object sender, EventArgs e)
         {
-            txtMatKhau.UseSystemPasswordChar = false; // Hiển thị mật khẩu khi rê chuột vào
+            txtMatKhau.UseSystemPasswordChar = false;
         }
 
         private void rdoImgPass_MouseLeave(object sender, EventArgs e)
         {
-            txtMatKhau.UseSystemPasswordChar = true; // Ẩn mật khẩu khi rời chuột
+            txtMatKhau.UseSystemPasswordChar = true;
         }
         private void btnHuy_Click(object sender, EventArgs e)
         {

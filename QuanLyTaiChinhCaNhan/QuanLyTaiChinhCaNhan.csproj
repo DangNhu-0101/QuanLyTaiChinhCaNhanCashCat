@@ -218,6 +218,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\NghiepVuHangMuc.cs" />
+    <Compile Include="Helpers\ReportHelper.cs" />
     <Compile Include="PhanTichVaTraCuuDuLieu\frmThongKe.cs">
       <SubType>Form</SubType>
     </Compile>

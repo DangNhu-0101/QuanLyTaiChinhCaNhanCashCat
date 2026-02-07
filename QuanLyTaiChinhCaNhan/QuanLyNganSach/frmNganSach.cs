@@ -29,7 +29,7 @@ namespace QuanLyNganSach
         {
             try
             {
-                // Khởi tạo dgvNganSach
+
                 dgvNganSach.Columns.Clear();
                 dgvNganSach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgvNganSach.AllowUserToAddRows = false;
@@ -40,14 +40,14 @@ namespace QuanLyNganSach
                     Name = "MaNganSach",
                     HeaderText = "Mã Ngân Sách",
                     DataPropertyName = "MaNganSach",
-                    FillWeight = 5 // 5% chiều rộng
+                    FillWeight = 5 
                 };
                 var colTenHangMuc = new DataGridViewTextBoxColumn
                 {
                     Name = "TenHangMuc",
                     HeaderText = "Tên Hạng Mục",
                     DataPropertyName = "TenHangMuc",
-                    FillWeight = 20 // 20% chiều rộng
+                    FillWeight = 20 
                 };
                 colTenHangMuc.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                 var colSoTienNganSach = new DataGridViewTextBoxColumn
@@ -55,21 +55,21 @@ namespace QuanLyNganSach
                     Name = "SoTienNganSach",
                     HeaderText = "Số Tiền",
                     DataPropertyName = "SoTienNganSach",
-                    FillWeight = 20 // 20% chiều rộng
+                    FillWeight = 20 
                 };
                 var colThoiGianBatDau = new DataGridViewTextBoxColumn
                 {
                     Name = "ThoiGianBatDau",
                     HeaderText = "Ngày Bắt Đầu",
                     DataPropertyName = "ThoiGianBatDau",
-                    FillWeight = 20 // 25% chiều rộng
+                    FillWeight = 20 
                 };
                 var colThoiGianKetThuc = new DataGridViewTextBoxColumn
                 {
                     Name = "ThoiGianKetThuc",
                     HeaderText = "Ngày Kết Thúc",
                     DataPropertyName = "ThoiGianKetThuc",
-                    FillWeight = 20 // 25% chiều rộng
+                    FillWeight = 20 
                 };
 
                 var colTienDo = new DataGridViewProgressColumn
@@ -77,14 +77,13 @@ namespace QuanLyNganSach
                     Name = "TienDo",
                     HeaderText = "Tiến Độ",
                     DataPropertyName = "TienDo",
-                    FillWeight = 15 // 15% chiều rộng
+                    FillWeight = 15 
                 };
                 colTienDo.MinimumWidth = 120;
                 colTienDo.Width = 180;
 
                 dgvNganSach.Columns.AddRange(new DataGridViewColumn[] { colMaNganSach, colTenHangMuc, colSoTienNganSach, colThoiGianBatDau, colThoiGianKetThuc,colTienDo });
 
-                // Khởi tạo dgvChiTiet
                 dgvChiTiet.Columns.Clear();
                 dgvChiTiet.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgvChiTiet.ReadOnly = true;
@@ -96,14 +95,14 @@ namespace QuanLyNganSach
                     Name = "MaGiaoDich",
                     HeaderText = "Mã Giao Dịch",
                     DataPropertyName = "MaGiaoDich",
-                    FillWeight = 5 // 5% chiều rộng
+                    FillWeight = 5 
                 };
                 var colChiTietTenHangMuc = new DataGridViewTextBoxColumn
                 {
                     Name = "TenHangMuc",
                     HeaderText = "Hạng Mục",
                     DataPropertyName = "TenHangMuc",
-                    FillWeight = 20 // 20% chiều rộng
+                    FillWeight = 20
                 };
                 colChiTietTenHangMuc.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
                 var colSoTienChi = new DataGridViewTextBoxColumn
@@ -111,14 +110,14 @@ namespace QuanLyNganSach
                     Name = "SoTienChi",
                     HeaderText = "Số Tiền Chi",
                     DataPropertyName = "SoTienChi",
-                    FillWeight = 20 // 20% chiều rộng
+                    FillWeight = 20
                 };
                 var colChiTietTienDo = new DataGridViewProgressColumn
                 {
                     Name = "TienDo",
                     HeaderText = "Tiến Độ (%)",
                     DataPropertyName = "TienDo",
-                    FillWeight = 20 // 20% chiều rộng
+                    FillWeight = 20 
                 };
                 colChiTietTienDo.MinimumWidth = 120;
                 colChiTietTienDo.Width = 180;
@@ -128,20 +127,19 @@ namespace QuanLyNganSach
                     Name = "NgayGiaoDich",
                     HeaderText = "Ngày Giao Dịch",
                     DataPropertyName = "NgayGiaoDich",
-                    FillWeight = 15 // 15% chiều rộng
+                    FillWeight = 15 
                 };
                 var colGhiChu = new DataGridViewTextBoxColumn
                 {
                     Name = "GhiChu",
                     HeaderText = "Ghi Chú",
                     DataPropertyName = "GhiChu",
-                    FillWeight = 20 // 20% chiều rộng
+                    FillWeight = 20 
                 };
                 colGhiChu.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
 
                 dgvChiTiet.Columns.AddRange(new DataGridViewColumn[] { colChiTietMaGiaoDich, colChiTietTenHangMuc, colSoTienChi, colChiTietTienDo, colNgayGiaoDich, colGhiChu });
 
-                // Bật AutoSizeRowsMode để tự động điều chỉnh chiều cao hàng
                 dgvNganSach.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
                 dgvChiTiet.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             }
@@ -231,7 +229,7 @@ namespace QuanLyNganSach
         {
             try
             {
-                // Tạo DataTable thủ công để chứa dữ liệu
+
                 DataTable dt = new DataTable();
                 dt.Columns.Add("TenHangMuc", typeof(string));
                 dt.Columns.Add("SoTienChi", typeof(decimal));
@@ -240,7 +238,6 @@ namespace QuanLyNganSach
                 dt.Columns.Add("NgayGiaoDich", typeof(DateTime));
                 dt.Columns.Add("GhiChu", typeof(string));
 
-                // Truy vấn chi tiết giao dịch
                 string queryGiaoDich = @"
                     SELECT 
                         hm.TenHangMuc,
@@ -263,7 +260,6 @@ namespace QuanLyNganSach
 
                 DataTable dtGiaoDich = db.ExecuteQuery(queryGiaoDich, parametersGiaoDich);
 
-                // Truy vấn tổng chi và tiến độ theo hạng mục
                 string queryTongChi = @"
                     SELECT 
                         hm.TenHangMuc,
@@ -286,7 +282,6 @@ namespace QuanLyNganSach
 
                 DataTable dtTongChi = db.ExecuteQuery(queryTongChi, parametersTongChi);
 
-                // Gộp dữ liệu giao dịch vào DataTable
                 foreach (DataRow rowGiaoDich in dtGiaoDich.Rows)
                 {
                     string tenHangMuc = rowGiaoDich["TenHangMuc"].ToString();
@@ -297,7 +292,6 @@ namespace QuanLyNganSach
                     newRow["NgayGiaoDich"] = rowGiaoDich["NgayGiaoDich"];
                     newRow["GhiChu"] = rowGiaoDich["GhiChu"];
 
-                    // Tìm tiến độ tương ứng từ dtTongChi
                     foreach (DataRow rowTongChi in dtTongChi.Rows)
                     {
                         if (rowTongChi["TenHangMuc"].ToString() == tenHangMuc)
@@ -310,7 +304,6 @@ namespace QuanLyNganSach
                     dt.Rows.Add(newRow);
                 }
 
-                // Gán DataSource cho dgvChiTiet
                 dgvChiTiet.DataSource = dt;
                 if (dgvChiTiet.Columns.Contains("TienDo"))
                 {
@@ -371,7 +364,7 @@ namespace QuanLyNganSach
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi khi kiểm tra trùng lặp ngân sách: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return true; // Ngăn hành động khi có lỗi
+                return true; 
             }
         }
 
@@ -511,7 +504,6 @@ namespace QuanLyNganSach
                         }
                     }
 
-                    // Hiển thị chi tiết nếu là ngân sách Tổng Quát
                     if (tenHangMuc == "Tổng Quát")
                     {
                         int maNganSach = Convert.ToInt32(row.Cells["MaNganSach"].Value);
@@ -520,12 +512,12 @@ namespace QuanLyNganSach
                     }
                     else
                     {
-                        dgvChiTiet.DataSource = null; // Xóa dữ liệu nếu không phải Tổng Quát
+                        dgvChiTiet.DataSource = null; 
                     }
                 }
                 else
                 {
-                    dgvChiTiet.DataSource = null; // Xóa dữ liệu nếu không có hàng được chọn
+                    dgvChiTiet.DataSource = null; 
                 }
             }
             catch (Exception ex)

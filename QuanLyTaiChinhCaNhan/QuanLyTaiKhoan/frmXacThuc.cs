@@ -6,7 +6,7 @@ namespace QuanLyTaiChinhCaNhan
 {
     public partial class frmXacThuc : Form
     {
-        private string chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+        private string chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
 
         public frmXacThuc()
         {

@@ -11,7 +11,7 @@ namespace QuanLyNganSach
 
         public DatabaseConnection()
         {
-            chuoiketnoi = "Server = LAPTOP-O8Q0L0EF\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
+            chuoiketnoi = "Server = .\\SQLEXPRESS; Database = QuanLyChiTieu; Integrated Security = True";
         }
 
         public DataTable ExecuteQuery(string query, SqlParameter[] parameters = null)

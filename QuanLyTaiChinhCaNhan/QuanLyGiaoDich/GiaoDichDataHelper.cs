@@ -17,7 +17,7 @@ namespace QuanLyTaiChinhCaNhan
         public readonly string deviceId = Guid.NewGuid().ToString();
         private DateTime lastSyncTime = DateTime.MinValue;
         private readonly FirebaseClient firebaseClient;
-        private readonly TimeSpan localTimeZoneOffset = TimeSpan.FromHours(7); // +07:00
+        private readonly TimeSpan localTimeZoneOffset = TimeSpan.FromHours(7); 
 
         public GiaoDichDataHelper(int maTaiKhoan)
         {

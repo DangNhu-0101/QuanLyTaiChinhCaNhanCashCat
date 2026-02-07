@@ -42,8 +42,8 @@
             this.rdoImgPass = new Guna.UI2.WinForms.Guna2ImageButton();
             this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.linklblDangKy = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.siticoneShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
@@ -67,7 +67,7 @@
             this.label1.Location = new System.Drawing.Point(210, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 49);
+            this.label1.Size = new System.Drawing.Size(349, 79);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng nhập";
             // 
@@ -80,7 +80,7 @@
             this.linklblKhoiPhucMatKhau.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(114)))));
             this.linklblKhoiPhucMatKhau.Location = new System.Drawing.Point(314, 436);
             this.linklblKhoiPhucMatKhau.Name = "linklblKhoiPhucMatKhau";
-            this.linklblKhoiPhucMatKhau.Size = new System.Drawing.Size(134, 25);
+            this.linklblKhoiPhucMatKhau.Size = new System.Drawing.Size(216, 40);
             this.linklblKhoiPhucMatKhau.TabIndex = 6;
             this.linklblKhoiPhucMatKhau.TabStop = true;
             this.linklblKhoiPhucMatKhau.Text = "Quên mật khẩu";
@@ -95,7 +95,7 @@
             this.lblMatKhau.Location = new System.Drawing.Point(68, 259);
             this.lblMatKhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(98, 28);
+            this.lblMatKhau.Size = new System.Drawing.Size(160, 45);
             this.lblMatKhau.TabIndex = 3;
             this.lblMatKhau.Text = "Mật khẩu";
             // 
@@ -107,7 +107,7 @@
             this.lblTenDangNhap.Location = new System.Drawing.Point(38, 163);
             this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(148, 28);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(237, 45);
             this.lblTenDangNhap.TabIndex = 1;
             this.lblTenDangNhap.Text = "Tên đăng nhập";
             // 
@@ -152,7 +152,7 @@
             this.txtTenDangNhap.PlaceholderText = "";
             this.txtTenDangNhap.SelectedText = "";
             this.txtTenDangNhap.ShadowDecoration.Parent = this.txtTenDangNhap;
-            this.txtTenDangNhap.Size = new System.Drawing.Size(250, 44);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(250, 43);
             this.txtTenDangNhap.TabIndex = 8;
             // 
             // txtMatKhau
@@ -171,14 +171,14 @@
             this.txtMatKhau.ForeColor = System.Drawing.Color.Black;
             this.txtMatKhau.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.HoveredState.Parent = this.txtMatKhau;
-            this.txtMatKhau.Location = new System.Drawing.Point(219, 242);
+            this.txtMatKhau.Location = new System.Drawing.Point(219, 241);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(0);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '\0';
             this.txtMatKhau.PlaceholderText = "";
             this.txtMatKhau.SelectedText = "";
             this.txtMatKhau.ShadowDecoration.Parent = this.txtMatKhau;
-            this.txtMatKhau.Size = new System.Drawing.Size(250, 44);
+            this.txtMatKhau.Size = new System.Drawing.Size(250, 43);
             this.txtMatKhau.TabIndex = 9;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -266,21 +266,12 @@
             this.linklblDangKy.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(45)))), ((int)(((byte)(114)))));
             this.linklblDangKy.Location = new System.Drawing.Point(100, 436);
             this.linklblDangKy.Name = "linklblDangKy";
-            this.linklblDangKy.Size = new System.Drawing.Size(147, 25);
+            this.linklblDangKy.Size = new System.Drawing.Size(237, 40);
             this.linklblDangKy.TabIndex = 11;
             this.linklblDangKy.TabStop = true;
             this.linklblDangKy.Text = "Về trang đăng ký";
             this.linklblDangKy.VisitedLinkColor = System.Drawing.Color.PaleVioletRed;
             this.linklblDangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblDangKy_LinkClicked);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(314, 41);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -291,9 +282,18 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(314, 41);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 44;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmDangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(924, 535);
@@ -303,7 +303,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDangNhap";
             this.Text = "frmDangNhap";
-            this.Load += new System.EventHandler(this.frmDangNhap_Load);
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.siticoneShadowPanel1.ResumeLayout(false);
             this.siticoneShadowPanel1.PerformLayout();
